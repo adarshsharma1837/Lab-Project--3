@@ -1,0 +1,63 @@
+body{background-color: #d3d6db;}
+nav{display: flex; justify-content: space-between; align-items: center; border: 2px solid black; background-color: #be3144; color: white;border-radius: 20px;}
+#header{font-size: 50px; margin-left: 10px;position: relative;}
+a{text-decoration: none; color: white; margin: 10px;}
+#first{display: inline;}
+.intro{font-size: 100px;margin-left: 10px; margin-bottom: 0px; margin-top: 5px}
+#disco{animation: disco 2s linear 0s infinite;}
+@keyframes disco{
+    0%{color: blue;}
+    50%{color: red;}
+    100%{color: green;}
+}
+p{margin-left: 7px;font-size: 20px;}
+#profile_img{height: 450px; width: 450px; position: relative; left: 1000px; top: -290px;}
+.secondhead{font-size: 40px;color:  #3a4750; margin: 0px;}
+#second{margin: 0px;margin-bottom: 0px; position: relative; top: -250px; }
+#skill_parent{display: flex; justify-content: space-around;}
+.boxes{border: 2px solid black; height: 150px; width: 400px; border-radius: 40px; background-color: #be3144; align-items: center;margin-top: 50px; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.boxes:hover{box-shadow: 10px 10px 30px #3a4750; transition: all 0.5s ease-in 0s;}
+.box_text{margin: 3px;color: white;}
+#project_parent{display: flex; flex-direction: column;  align-items: center;}
+.project_boxes{border: 2px solid black; height: 400px; width: 800px; margin-top: 40px; border-radius: 40px;}
+#pbox1{background-image: url(./Screenshot\ 2025-11-16\ 132528.png); background-size: cover; animation: pbox1 6s linear 0s infinite;}
+#pbox2{background-image: url(./Screenshot\ 2025-11-16\ 132609.png); background-size: cover;animation: pbox2 6s linear 0s infinite;}
+@keyframes pbox1{
+    0%{background-image: url(./Screenshot\ 2025-11-16\ 132528.png); background-size: cover}
+    50%{background-image: url(./Screenshot\ 2025-11-16\ 132739.png); background-size: cover}
+    100%{background-image: url(./Screenshot\ 2025-11-16\ 132528.png); background-size: cover}
+}
+@keyframes pbox2{
+    0%{background-image: url(./Screenshot\ 2025-11-16\ 132609.png); background-size: cover;}
+    50%{background-image: url(./Screenshot\ 2025-11-16\ 132549.png); background-size: cover;}
+    100%{background-image: url(./Screenshot\ 2025-11-16\ 132609.png); background-size: cover;}
+}
+#form{border: 2px solid black;width: 400px;height: 350px; transform: translate(580px); padding: 20px ; border-radius: 40px;}
+input{width: 390px; border-color:#be3144;background-color: #d3d6db;}
+textarea{border-color: #be3144;width: 390px;background-color: #d3d6db;}
+#Send{background-color: #be3144; width: 400px; color: white; border-radius: 20px; height: 30px;transform: translateY(30px);}
+#footer{display: block; align-items: center;justify-content: center ; border: 2px solid black; background-color: #be3144; color: white;margin-left: 0px; margin-right: 0px; transform: translate(-620px); width: 1550px; height: 50px;}
+#footer_text{font-size: 15px;margin: 0px; text-align: center; align-self: center ;padding-top: 20px; animation: footer 8s linear 0s infinite}
+@keyframes footer{
+    0%{transform: translate(-750px);}
+    100%{transform: translate(750px);}
+}
+#back{width: 150px; background-color: #303841; position: fixed;top: 730px; left: 1350px; opacity: 0.7; border-radius: 50%; height: 50px; border: 5px solid red}
+@media (min-width:375px) and (max-width:900px){
+    nav{border-radius: 5px;}
+    #header{font-size: 20px; margin-left: 1px;}
+    a{margin: 1px; font-size: 10px;}
+    .intro{font-size: 20px;margin-left: 10px; margin-bottom: 0px; margin-top: 5px}
+    #profile_img{height: 200px; width: 200px; position: relative; left: 1px; top: 0px;}
+    #second{margin: 0px;margin-bottom: 0px; position: relative; top: 20px; }
+    p{margin-left: 7px;font-size: 15px;}
+    .boxes{border: 2px solid black; height: 50px; width: 100px; border-radius: 40px; background-color: #be3144; align-items: center;margin-top: 50px; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+    .project_boxes{border: 2px solid black; height: 200px; width: 350px; margin-top: 40px; border-radius: 40px;}
+    .box_text{font-size: 10px;}
+    #form{border: 2px solid black;width: 200px;height: 350px; transform: translate(60px); padding: 20px ; border-radius: 40px;}
+input{width: 190px; border-color:#be3144;background-color: #d3d6db;}
+textarea{border-color: #be3144;width: 190px;background-color: #d3d6db;}
+#Send{background-color: #be3144; width: 200px; color: white; border-radius: 20px; height: 30px;transform: translateY(30px);}
+#footer{display: block; align-items: center;justify-content: center ; border: 2px solid black; background-color: #be3144; color: white;margin-left: 0px; margin-right: 0px; transform: translate(-90px); width: 500px; height: 50px;}
+#footer_text{font-size: 15px;margin: 0px; text-align: center; align-self: center ;padding-top: 20px; animation: footer 8s linear 0s infinite}
+}
